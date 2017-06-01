@@ -8,6 +8,10 @@
 
         .fig-img {
             margin: 2px auto;
+
+            &.full-width {
+                width: 100%;
+            }
         }
     }
     &.left {
@@ -47,6 +51,14 @@
         .figure-img {
             margin: 0 auto;
         }
+    }
+    &.fig-full-width {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
     }
 }
 
