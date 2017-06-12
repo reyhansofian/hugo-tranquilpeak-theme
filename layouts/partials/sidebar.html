@@ -11,13 +11,13 @@
         {{ end }}
       </div>
     {{ end }}
-    <ul class="sidebar-buttons">
+    <ul class="sidebar-buttons main">
       {{ partial "menu.html" (dict "menu" .Site.Menus.main "root" $) }}
     </ul>
-    <ul class="sidebar-buttons">
+    <ul class="sidebar-buttons links">
       {{ partial "menu.html" (dict "menu" .Site.Menus.links "root" $) }}
     </ul>
-    <ul class="sidebar-buttons">
+    <ul class="sidebar-buttons misc">
       {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}
     </ul>
   </div>
